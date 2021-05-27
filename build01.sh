@@ -1,0 +1,1 @@
+gcc tutorial01.c -I/usr/local/Cellar/ffmpeg/4.3.1_4/include -L/usr/local/Cellar/ffmpeg/4.3.1_4/lib -lavutil -lavformat -lavcodec -lswscale -o tutorial01.out

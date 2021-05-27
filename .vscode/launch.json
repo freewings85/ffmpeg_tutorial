@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "debug01",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/01debug.o",
+            "args": ["/Users/chenzifei/Documents/workspace/rtsp/out251.flv"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "build01"
+        },
+        {
+            "name": "debugmytest",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/mytest.o",
+            "args": ["/Users/chenzifei/Documents/workspace/rtsp/out251.flv"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "buildmytest"
+        },
+        {
+            "name": "debugmyrescale",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/myrescale.o",
+            "args": ["/Users/chenzifei/Documents/workspace/rtsp/out251.flv"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "buildmyrescale"
+        },
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "build01",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "${workspaceFolder}/tutorial01.c",
+                "-I/usr/local/Cellar/ffmpeg/4.3.1_4/include",
+                "-L/usr/local/Cellar/ffmpeg/4.3.1_4/lib",
+                "-lavutil",
+                "-lavformat",
+                "-lavcodec",
+                "-lswscale",
+                "-o",
+                "${workspaceFolder}/01debug.o"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compile of tutorial 01。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "buildmytest",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "${workspaceFolder}/mytest.c",
+                "-I/usr/local/include",
+                "-L/usr/local/lib",
+                "-lavutil",
+                "-lavformat",
+                "-lavcodec",
+                "-lswscale",
+                "-o",
+                "${workspaceFolder}/mytest.o"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compile of mytest 01。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "buildmyrescale",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "${workspaceFolder}/mytestrescale.c",
+                "-I/usr/local/include",
+                "-L/usr/local/lib",
+                "-lavutil",
+                "-lavformat",
+                "-lavcodec",
+                "-lswscale",
+                "-o",
+                "${workspaceFolder}/myrescale.o"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compile of mytestrescale 01。"
+        }
+    ],
+    "version": "2.0.0"
+}

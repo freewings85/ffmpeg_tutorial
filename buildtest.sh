@@ -1,0 +1,1 @@
+gcc tutorial01.c -I/usr/local/include -L/usr/local/lib -lavutil -lavformat -lavcodec -lswscale -o mytest.out
