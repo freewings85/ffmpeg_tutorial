@@ -43,5 +43,18 @@
             "MIMode": "lldb",
             "preLaunchTask": "buildmyrescale"
         },
+        {
+            "name": "debugmyencode",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/myencode.o",
+            "args": ["/Users/chenzifei/Documents/workspace/rtsp/out251.flv"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "buildmyencode"
+        },
     ]
 }

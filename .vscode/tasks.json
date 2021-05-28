@@ -65,6 +65,28 @@
                 "isDefault": true
             },
             "detail": "compile of mytestrescale 01。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "buildmyencode",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "${workspaceFolder}/mytestencode.c",
+                "-I/usr/local/include",
+                "-L/usr/local/lib",
+                "-lavutil",
+                "-lavformat",
+                "-lavcodec",
+                "-lswscale",
+                "-o",
+                "${workspaceFolder}/myencode.o"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compile of mytestencode 01。"
         }
     ],
     "version": "2.0.0"
